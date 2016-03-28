@@ -2,13 +2,19 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
-    <title>A pure-JavaScript driven chatbot</title>
+    <title>EVE &mdash; A lightweight pure JavaScript chatbot</title>
+    <style>
+    #input {width:400px;}
+    #log-container {width:800px; height:400px; border:1px solid #eee; padding:1em; margin-top:1em; overflow:scroll;}
+    </style>
 </head>
 <body>
     <h2>A pure-JavaScript driven chatbot</h2>
     <input id='input' type='text'>
     <button id='send'>Send</button>
-    <table id='log'></table>
+    <div id='log-container'>
+        <table id='log'></table>
+    </div>
 </body>
 
 <script src='functions.js'></script>

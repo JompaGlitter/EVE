@@ -2,7 +2,7 @@
 EVE (**E**ssential **V**irtual **E**ntity) is a lightweight pure JavaScript chatbot built as a final exam in a JavaScript course at Blekinge Tekniska Högskola the spring of 2016. It focuses on simplicity and is easily extendable.
 
 ##Setup
-To get EVE, simply clone the repo with `git clone https://github.com/JompaGlitter/EVE.git` and point your browser to the folder and chatbot.html and ta-da, you have a ugly looking basic version of EVE running. To spice up the look a bit, just add some CSS to it.
+To get EVE, simply clone the repo with `git clone https://github.com/JompaGlitter/EVE.git` and point your browser to the folder and chatbot.html and ta-da, you have a ugly looking basic version of EVE running. To spice up the look a bit, just add some more CSS to it.
 
 ##How it works
 **main.js** is the heart of EVE, it's where the main code and logic is. But to use EVE you need some som data and functionality attached to it. Otherwise EVE is more or less just an empty shell without presentation or content. Here is what it needs:
@@ -16,6 +16,7 @@ If you want to create your own interface there are some naming of id tags to tak
 * _input_: This is the inputfield. Everything involving processing the text input is linked to this id.
 * _send_: This is the send button. Event listeners for both click and 'enter' keypress are linked to this id.
 * _log_: This is the chat field where input and output text is printed. Everything connected to outputting text to screen is linked to this id.
+* _log-container_: This is the container for the log tabel. It makes it possible to auto scroll the log when adding text to it.
 
 Also, it's **important** to include the functions.js and main.js files in the document and _in this order_ because the main.js uses the variable in functions.js without including the file itself. An update further on might fix this dependency flaw.
 

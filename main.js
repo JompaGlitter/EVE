@@ -214,11 +214,16 @@ document.addEventListener("DOMContentLoaded", function(){
             // Send message to log
             input = htmlEntities(input);
             addTableRow(log, "Me: ", input);
+            
+            logContainer = document.getElementById('log-container');
+            logContainer.scrollTop = logContainer.scrollHeight;
         
             // Send answer to log with a slight delay
             setTimeout(function() {
                 returnMessage = getReturnMessage(data1, data, input);
                 addTableRow(log, "EVE: ", returnMessage);
+                
+                logContainer.scrollTop = logContainer.scrollHeight;
             }, 600);
             
         });
